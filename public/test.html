@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>Burger Eating Contest!</title>
+	<link rel="icon" sizes="32x32" href="./assets/image/burger_icon.jpg">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/css/style.css" type="text/css">
+
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="./assets/js/burgers.js"></script>
+</head>
+<body>
+	<div class="container">
+		<section id="page-name">
+				<h1>Burger Eating Contest!</h1>
+		</section>
+
+		<section class="row">
+			<div class="col-md-7 col-left">
+				<table>
+					<tr class="table-row">
+						<td class="table-first-col">1. Cheese Burger</td>
+						<td><button class="change-devour" data-id="1">Eat me!</button></td>
+					</tr>
+					<tr class="table-row">
+						<td class="table-first-col">2. Chicken Burger</td>
+						<td><button class="change-devour" data-id="2">Eat me!</button></td>
+					</tr>
+					<tr class="table-row">
+						<td class="table-first-col">3. Turkey Burger</td>
+						<td><button class="change-devour" data-id="3">Eat me!</button></td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-5 col-right">
+				<div>4. Steak Burger</div>
+			</div>
+		</section>
+
+		<form class="create-form">
+			<div class="form-group">
+				<label for="name"></label>
+				<textarea id="name" name="burger-name" rows="1" cols="40"></textarea>
+			</div>
+			<button type="submit">Add Burger</button>
+			<button id="delete-all">Delete All Burgers</button>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<div class="container">
+    <section id="page-name">
+            <h1>Burger Eating Contest!</h1>
+    </section>
+
+    <section class="row">
+        <div class="col-md-7 col-left">
+            <table>
+                {{#each burgers}}
+                    {{#unless devoured}}
+                        {{> burgers/burger-block}}
+                    {{/unless}}
+                {{/each}}
+            </table>
+        </div>
+        <div class="col-md-5 col-right">
+            {{#each burgers}}
+                {{#if devoured}}
+                    <div>{{id}}. {{burger_name}}</div>
+                {{/if}}
+            {{/each}}
+        </div>
+    </section>
+
+    <form class="create-form">
+        <div class="form-group">
+            <label for="name"></label>
+            <textarea id="name" name="burger-name" rows="1" cols="40" placeholder="What do you want to eat?"></textarea>
+        </div>
+        <button type="submit">Add Burger</button>
+        <button id="delete-all">Delete All Burgers</button>
+    </form>
+  <div class="footer">&copy;2018 Grady Houston</div>
+</div>
